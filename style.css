@@ -1,0 +1,101 @@
+/* Import Font do google fonts */
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Righteous&display=swap');
+
+* {
+   font-family: 'Roboto', sans-serif;
+   font-size: 16px;
+}
+
+body {
+   background-color: dimgrey;
+   margin: 0;
+}
+
+nav.navbar {
+   background-color: lightcoral;
+   justify-content: space-between;
+   display: flex;
+}
+
+nav.navbar a {
+   border-bottom: 2px solid lightcoral;
+   border-top: 2px solid lightcoral;
+   background-color: unset;
+   text-decoration: none;
+   font-size: 1.6em;
+   color: white;
+   padding: 15px;
+}
+
+nav.navbar a:hover {
+   border-bottom: 2px solid greenyellow;
+   background-color: indianred;
+   color: greenyellow;
+}
+
+nav.navbar a:last-child {
+   float: right;
+}
+
+nav a svg {
+   background-color: unset;
+   width: 32px;
+}
+
+nav a:last-child:hover svg {
+   fill: greenyellow;
+}
+
+.boxPresentetion,
+.grid section {
+   background-color: white;
+   padding: 10px;
+   margin: 10px;
+}
+
+.boxPresentetion h2 {
+   border-bottom: 2px solid lightgrey;
+   font-family: 'Righteous', cursive;
+   text-transform: uppercase;
+   background-color: unset;
+   letter-spacing: 0.2em;
+   width: fit-content;
+   padding: 0 10px;
+   font-size: 1.6em;
+}
+
+.boxPresentetion p {
+   font-size: 1.2em;
+}
+
+.grid {
+   grid-template-columns: 1fr 1fr 1.5fr;
+   grid-gap: 10px;
+   display: grid;
+}
+
+footer {
+   background-color: lightcoral;
+   border: 1px solid lightcoral;
+   justify-content: center;
+   position: fixed;
+   display: flex;
+   padding: 10px;
+   width: 100vw;
+   bottom: 0;
+}
+
+footer p,
+footer span {
+   background-color: unset;
+}
+
+footer p span {
+   font-style: italic;
+
+}
+
+footer p span:last-child {
+   font-weight: bold;
+}
