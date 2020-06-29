@@ -13,7 +13,7 @@
    <header>
       <nav class="navbar">
          <a href="#">Dashboard Covid-19</a>
-         <a href="#" onclick="about()">
+         <a href="#" onclick="about()" title="about">
             <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" id="Capa_1"
                x="0px" y="0px" viewBox="0 0 512 512" style="enable-background:new 0 0 512 512;" xml:space="preserve">
                <g>
@@ -26,7 +26,7 @@
       </nav>
    </header>
    <div class="boxPresentetion">
-      <h2>Projeto Covid-19</h2>
+      <h2 class="title">Projeto Covid-19</h2>
       <p>
          Laborum pariatur eu incididunt proident nostrud in non nulla officia duis. Ipsum est esse aliquip est sunt ea
          id est qui pariatur sunt. Aute quis non velit occaecat elit. Amet qui minim eu voluptate sunt ullamco proident
@@ -36,20 +36,14 @@
    </div>
    <div class="grid">
       <section class="Region">
-         Pariatur exercitation laboris do ullamco minim qui. Ea magna Lorem reprehenderit laboris aliquip. Culpa
-         incididunt laboris officia anim proident. Duis excepteur laborum excepteur aliquip adipisicing incididunt
-         labore anim.
+         <h2 class="title">Dados do Brasil</h2>
       </section>
       <section class="World">
-         Do ullamco sint in dolor fugiat sint ut. Laborum dolor quis ut mollit magna eu ex laborum aliquip laboris
-         nulla. Lorem laboris pariatur nisi eu minim qui aute. Lorem incididunt aute laboris velit. Excepteur
-         deserunt mollit esse irure quis elit do elit cillum sunt commodo deserunt minim. Excepteur elit aute aliquip
-         in nulla adipisicing ex id consequat reprehenderit dolore quis.
+         <h2 class="title">Dados no Mundo</h2>
+
       </section>
       <section class="Ranking">
-         Deserunt Lorem dolore quis nostrud proident enim in sit pariatur id labore commodo esse velit. Lorem quis
-         nulla do adipisicing veniam deserunt quis cupidatat pariatur. Elit est sit cupidatat dolore nulla officia
-         enim dolor. Incididunt reprehenderit mollit in et mollit mollit.
+         <h2 class="title">Ranking Países com mais casos</h2>
       </section>
    </div>
    <footer>
@@ -58,6 +52,28 @@
          <span>Alfafis | Rafael Menezes</span>
       </p>
    </footer>
+
+   <div class="modal none">
+      <div class="modal-box">
+         <div class="header-modal">
+            <h2 class="title">
+               Sobre o sistema
+            </h2>
+            <button class="close" onclick="about()">
+               <img src="https://image.flaticon.com/icons/svg/2919/2919543.svg" alt=" close" />
+            </button>
+         </div>
+         <div class="body-modal">
+            <p>
+               Bem vindo ao Dashboard para o Ânima Educação sobre o Covid-19
+            </p>
+            <img src="https://image.flaticon.com/icons/svg/2037/2037885.svg" alt="bem-vindo" />
+         </div>
+         <div class="footer-modal">
+            <button class="certo" onclick="about()">Ok</button>
+         </div>
+      </div>
+   </div>
 </body>
 
 </html>

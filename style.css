@@ -50,19 +50,24 @@ nav a:last-child:hover svg {
 .boxPresentetion,
 .grid section {
    background-color: white;
-   padding: 10px;
-   margin: 10px;
+   padding: 15px;
+   margin: 25px;
 }
 
-.boxPresentetion h2 {
+.grid section {
+   margin-top: 0;
+}
+
+h2.title {
    border-bottom: 2px solid lightgrey;
    font-family: 'Righteous', cursive;
    text-transform: uppercase;
    background-color: unset;
    letter-spacing: 0.2em;
+   color: lightcoral;
    width: fit-content;
    padding: 0 10px;
-   font-size: 1.6em;
+   font-size: 1.4em;
 }
 
 .boxPresentetion p {
@@ -71,8 +76,26 @@ nav a:last-child:hover svg {
 
 .grid {
    grid-template-columns: 1fr 1fr 1.5fr;
-   grid-gap: 10px;
+   grid-gap: 0px;
    display: grid;
+}
+
+.Region label,
+.World label,
+.Ranking label {
+   font-size: 1.2em;
+}
+
+.Region span,
+.World span,
+.Ranking span {
+   font-size: 1.2em;
+   font-weight: bold;
+}
+
+.Ranking {
+   height: 50vh;
+   overflow: auto;
 }
 
 footer {
@@ -98,4 +121,84 @@ footer p span {
 
 footer p span:last-child {
    font-weight: bold;
+}
+
+.modal.none {
+   display: none;
+}
+
+.modal {
+   background-color: #000000c2;
+   position: absolute;
+   display: block;
+   z-index: 9;
+   bottom: 0;
+   right: 0;
+   left: 0;
+   top: 0;
+}
+
+.modal-box {
+   background-color: lightgray;
+   border: 1px solid gray;
+   border-radius: 5px;
+   position: absolute;
+   z-index: 99;
+   right: 25%;
+   left: 25%;
+   top: 25%;
+}
+
+.modal-box .header-modal {
+   border-bottom: 1px solid gray;
+   justify-content: space-between;
+   align-items: center;
+   display: flex;
+}
+
+.modal-box .body-modal {
+   text-align: center;
+   padding: 0 20px;
+   display: block;
+   padding: 10px;
+}
+
+.modal-box .body-modal p {
+   font-size: 1.6em;
+}
+
+.modal-box .header-modal button {
+   background: transparent;
+   height: fit-content;
+   cursor: pointer;
+   border-radius: 5px;
+   border: 1px solid lightgray;
+   padding: 5px;
+   margin: 0;
+}
+
+.modal-box .footer-modal {
+   border-top: 1px solid gray;
+   justify-content: flex-end;
+   padding: 10px;
+   display: flex;
+}
+
+.modal-box .footer-modal button {
+   border: 1px solid gray;
+   height: fit-content;
+   border-radius: 5px;
+   padding: 5px 10px;
+   font-size: 1.2em;
+   cursor: pointer;
+   float: right;
+   margin: 0;
+}
+
+.modal-box .header-modal img {
+   width: 24px;
+}
+
+.modal-box .body-modal img {
+   width: 50%;
 }
